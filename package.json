@@ -1,0 +1,19 @@
+{
+  "name": "ranking-instagram-palopo",
+  "version": "1.0.0",
+  "description": "Website ranking Instagram universitas di Kota Palopo dengan crawler jumlah pengikut.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "update": "node scripts/updateFollowers.js",
+    "test-parser": "node scripts/testParser.js",
+    "install-browser": "npx playwright install chromium"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "node-cron": "^3.0.3",
+    "playwright": "^1.46.0"
+  }
+}

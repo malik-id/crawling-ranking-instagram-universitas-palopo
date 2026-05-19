@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ranking Instagram Universitas Kota Palopo</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div>
+        <div class="badge">📊 Ranking Instagram</div>
+        <h1>Ranking Instagram Universitas di Kota Palopo</h1>
+      </div>
+
+      <div class="summary">
+        <div class="summary-card">
+          <span class="label">Total Instagram</span>
+          <span class="value" id="totalAkun">0</span>
+        </div>
+        <div class="summary-card">
+          <span class="label">Follower Tertinggi</span>
+          <span class="value" id="topFollower">0</span>
+        </div>
+        <div class="summary-card">
+          <span class="label">Update terakhir</span>
+          <span class="value" id="lastUpdate">-</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="toolbar">
+      <label class="search" for="searchInput">
+        <span>🔎</span>
+        <input id="searchInput" type="search" placeholder="Cari kampus atau username..." />
+      </label>
+      <button class="btn secondary" id="sortName">Urut Nama</button>
+      <button class="btn" id="sortFollower">Urut Pengikut</button>
+      <button class="btn warning" id="updateData">Update Crawler</button>
+    </section>
+
+    <div class="status show" id="statusBox">Memuat data...</div>
+
+    <section class="ranking-card">
+      <div class="ranking-head">
+        <div>Rank</div>
+        <div>Akun</div>
+        <div>Pengikut</div>
+        <div>Grafik</div>
+      </div>
+
+      <div id="rankingList"></div>
+      <div class="empty" id="emptyState">Data tidak ditemukan.</div>
+    </section>
+
+    <p class="note">
+      Catatan: tombol update cocok untuk admin/testing lokal. Untuk produksi, lebih baik update melalui scheduler/cron, bukan setiap halaman dibuka.
+    </p>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
