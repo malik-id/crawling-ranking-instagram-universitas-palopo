@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ranking Instagram Universitas Kota Palopo
 
 Project ini berisi website ranking Instagram universitas di Kota Palopo + crawler sederhana untuk mengambil jumlah pengikut dari halaman profil Instagram.
@@ -145,3 +146,7 @@ ENABLE_CRON=false
 - Project ini tidak memakai proxy, stealth plugin, cookie login, atau bypass.
 - Kalau Instagram meminta login/challenge atau mengubah struktur halaman, crawler bisa gagal.
 - Untuk produksi yang paling stabil, gunakan API resmi Meta/Instagram atau input manual admin.
+=======
+# crawling-ranking-instagram-universitas-palopo
+Website ranking Instagram universitas di Kota Palopo dengan crawler Playwright untuk update jumlah followers secara berkala.
+>>>>>>> 11e234728190f8e653d173f913a3ce7f531c8f23
